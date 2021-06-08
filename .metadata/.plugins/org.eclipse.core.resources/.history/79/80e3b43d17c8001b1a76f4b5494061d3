@@ -1,0 +1,26 @@
+package com.adp.assignment.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Collections;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpStatus;
+
+import com.adp.assignment.model.Requirements;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+class CountCoinControllerTest {
+	
+	private CountCoinsController countCoinController; 
+
+
+
+	@Test
+	public void givenAmountIsSuppliedWhenCalculatingShouldReturnOKResponse() {
+		Requirements requirements = new Requirements(100, 100, 100, 100, 100);
+		assertThat(countCoinController.calculateLeastNumberOfCoinsRequiredForAmount(requirements).getStatusCode()).isEqualTo(HttpStatus.OK);
+		
+	}
+
+}

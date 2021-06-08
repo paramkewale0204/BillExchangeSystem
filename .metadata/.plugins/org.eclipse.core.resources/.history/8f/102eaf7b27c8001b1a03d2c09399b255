@@ -1,0 +1,7 @@
+package com.org.assignment.service;
+
+public interface BillExchangeSystemService {
+
+	public String calculateLeastNumberOfCoinsRequiredForAmountService(double amount); 
+
+}

@@ -1,0 +1,38 @@
+package com.adp.assignment.controller;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpStatus;
+
+import com.org.assignment.controller.BillExchangeSystemController;
+import com.org.assignment.service.BillExcahangeSystemServiceImpt;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+class BillExchangeSystemControllerTest {
+
+	private static final String Amount_Entered_By_User = "10";
+	private BillExchangeSystemController billExchangeSystemController;
+	private BillExcahangeSystemServiceImpt billExcahangeSystemServiceImpt;
+
+	@BeforeEach
+	public void setUp() {
+		this.billExchangeSystemController = billExchangeSystemController;
+		this.billExcahangeSystemServiceImpt = billExcahangeSystemServiceImpt;
+	}
+
+	@Test
+	public void amountIsSuppliedWhenCalculatingLeastNumberShouldReturnOKResponse() {
+		String invalidInput = "string value";
+		assertThat(billExchangeSystemController.calculateLeastNumberOfCoinsRequiredForAmount(invalidInput).getStatusCode())
+				.isEqualTo(HttpStatus.BAD_REQUEST);
+	}
+	
+	@Test
+	public void amountIsSuppliedWhenCalculatingMostNumberShouldReturnOKResponse() {
+		String invalidInput = "string value";
+		assertThat(billExchangeSystemController.calculateMostNumberOfCoinsRequiredForAmount(invalidInput).getStatusCode())
+				.isEqualTo(HttpStatus.BAD_REQUEST);
+	}
+
+}

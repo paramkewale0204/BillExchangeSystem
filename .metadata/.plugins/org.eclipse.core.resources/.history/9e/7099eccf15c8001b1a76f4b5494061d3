@@ -1,0 +1,24 @@
+package com.adp.assignment.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Collections;
+
+import org.junit.jupiter.api.Test;
+
+import com.adp.assignment.model.Requirements;
+
+class CountCoinControllerTest {
+	
+	private CountCoinsController countCoinController; 
+
+
+
+	@Test
+	public void givenNoAmountIsSuppliedWhenCalculatingShouldReturnErrorResponse() {
+//		int temp = null;
+//		Requirements requirements = new Requirements(null, null, null, null, null);
+		
+	}
+
+}

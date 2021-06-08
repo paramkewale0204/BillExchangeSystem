@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BillExchangeSystemControllerTest" project="ORG" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.adp.assignment.controller.BillExchangeSystemControllerTest" time="0.199" displayname="BillExchangeSystemControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.adp.assignment.controller.BillExchangeSystemControllerTest]">
+    <testcase name="amountIsSuppliedWhenCalculatingLeastNumberShouldReturnOKResponse" classname="com.adp.assignment.controller.BillExchangeSystemControllerTest" time="0.196" displayname="amountIsSuppliedWhenCalculatingLeastNumberShouldReturnOKResponse()" uniqueid="[engine:junit-jupiter]/[class:com.adp.assignment.controller.BillExchangeSystemControllerTest]/[method:amountIsSuppliedWhenCalculatingLeastNumberShouldReturnOKResponse()]"/>
+    <testcase name="amountIsSuppliedWhenCalculatingMostNumberShouldReturnOKResponse" classname="com.adp.assignment.controller.BillExchangeSystemControllerTest" time="0.001" displayname="amountIsSuppliedWhenCalculatingMostNumberShouldReturnOKResponse()" uniqueid="[engine:junit-jupiter]/[class:com.adp.assignment.controller.BillExchangeSystemControllerTest]/[method:amountIsSuppliedWhenCalculatingMostNumberShouldReturnOKResponse()]"/>
+  </testsuite>
+</testrun>

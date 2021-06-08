@@ -1,0 +1,9 @@
+package com.org.assignment.service;
+
+public interface BillExchangeSystemService {
+
+	public String calculateLeastNumberOfCoinsRequiredForAmountService(int amount); 
+	
+	public String calculateMostNumberOfCoinsRequiredForAmountService(int amount); 
+
+}
